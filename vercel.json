@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "tradersurvivor99",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
