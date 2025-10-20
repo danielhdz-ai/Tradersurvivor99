@@ -1,0 +1,21 @@
+INSTRUCCIONES PARA CORREGIR EL PARSER MT5:
+
+1. Abre index.html en VS Code
+2. Busca (Ctrl+F): "// Procesar cada fila de posición cerrada"
+3. La línea debería empezar con: for (const row of rows) {
+4. Reemplaza esta línea:
+   
+   BUSCAR:
+   const cells = row.querySelectorAll('td');
+   
+   REEMPLAZAR CON:
+   // Obtener SOLO las celdas visibles (sin class="hidden")
+   const allCells = row.querySelectorAll('td');
+   const cells = Array.from(allCells).filter(cell => !cell.classList.contains('hidden'));
+
+5. Guarda el archivo (Ctrl+S)
+6. Recarga la página en el navegador (F5)
+7. Intenta importar el HTML de nuevo
+
+Esta corrección hará que el parser ignore las celdas ocultas del HTML de MT5,
+que causan que los índices de las columnas estén desplazados.

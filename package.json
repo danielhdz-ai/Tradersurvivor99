@@ -1,0 +1,28 @@
+{
+  "name": "bingx-proxy-server",
+  "version": "1.0.0",
+  "description": "Proxy server for BingX API to handle CORS issues",
+  "main": "bingx-proxy.js",
+  "scripts": {
+  "start": "node proxy-server.js",
+  "dev": "nodemon proxy-server.js",
+  "start:all": "node start-all.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "bingx",
+    "proxy",
+    "cors",
+    "trading"
+  ],
+  "author": "Trading Journal",
+  "license": "MIT"
+}
