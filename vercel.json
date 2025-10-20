@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name": "tradersurvivor99",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
